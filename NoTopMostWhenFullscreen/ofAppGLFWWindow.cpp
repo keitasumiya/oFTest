@@ -1002,7 +1002,7 @@ void ofAppGLFWWindow::setFullscreen(bool fullscreen){
 
 		}
 
-		SetWindowPos(hwnd, HWND_TOPMOST, xpos, ypos, fullscreenW, fullscreenH, SWP_SHOWWINDOW);
+		SetWindowPos(hwnd, HWND_NOTOPMOST, xpos, ypos, fullscreenW, fullscreenH, SWP_SHOWWINDOW);
 		currentW = fullscreenW;
 		currentH = fullscreenH;
 
