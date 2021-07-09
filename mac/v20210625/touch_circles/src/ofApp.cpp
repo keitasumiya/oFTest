@@ -33,7 +33,10 @@ void ofApp::draw(){
     ofPushMatrix();
     ofScale(ratioX,ratioY); //scale!!
     ofSetColor(255);
-    colorImg.draw(0,0);
+    if (isDebugMode){
+        colorImg.draw(0,0);
+
+    }
     drawCircles();
     drawContours();
     drawCropRect();
